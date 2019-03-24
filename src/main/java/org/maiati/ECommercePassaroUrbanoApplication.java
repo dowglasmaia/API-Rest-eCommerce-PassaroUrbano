@@ -36,17 +36,17 @@ public class ECommercePassaroUrbanoApplication implements CommandLineRunner {
 		services.save(of3);
 
 		Oferta of4 = new Oferta(null, "diversao", "Estância das águas", "Diversão garantida com piscinas, trilhas e muito mais.",
-				"Original Burger", 150.00, true, "/assets/ofertas/4/img2.jpg", null, null);
+				"Original Burger", 150.00, false, "/assets/ofertas/4/img2.jpg", null, null);
 
 		services.save(of4);
 
 		Oferta of5 = new Oferta(null, "diversao", "Kart", "Bateria de Kart de 30 minutos",
-				"Original Burger", 105.00, true, "/assets/ofertas/5/img2.jpg", null, null);
+				"Original Burger", 105.00, false, "/assets/ofertas/5/img2.jpg", null, null);
 
 		services.save(of5);
 
 		Oferta of6 = new Oferta(null, "diversao", "Academia de tiro", "Sessão de tiro dinâmico com Instrutor, Estande, Alvo e Equipamentos.",
-				"Original Burger", 78.90, true, "/assets/ofertas/6/img2.jpg", null, null);
+				"Original Burger", 78.90, false, "/assets/ofertas/6/img2.jpg", null, null);
 
 		services.save(of6);
 

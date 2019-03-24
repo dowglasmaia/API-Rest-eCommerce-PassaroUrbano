@@ -9,16 +9,21 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class OfertaServices {
-	
+
 	@Autowired
 	private OfertaRepo repo;
-	
+
 	public Oferta save(Oferta entity) {
 		return repo.save(entity);
 	}
-	
-	public List<Oferta>findAll(){
+
+	public List<Oferta> findAll() {
 		return repo.findAll();
+	}
+
+	public List<Oferta> findCategoria(String categoria) {
+		List<Oferta> list = repo.findByLastname(categoria);
+		return list;
 	}
 
 }
