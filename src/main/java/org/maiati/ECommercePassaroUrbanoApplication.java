@@ -21,22 +21,22 @@ public class ECommercePassaroUrbanoApplication implements CommandLineRunner {
 	public void run(String... args) throws Exception {
 
 		Oferta of1 = new Oferta(null, "restaurante", "Super Burger", "Rodízio de Mini-hambúrger com opção de entrada.",
-				"Original Burger", 50.00, true, "/assets/ofertas/1/img1.jpg", null, null);
+				"Original Burger", 50.00, true, "/assets/ofertas/1/img1.jpg", "/assets/ofertas/1/img2.jpg", "/assets/ofertas/1/img3.jpg");
 
 		services.save(of1);
 
 		Oferta of2 = new Oferta(null, "restaurante", "Cozinha Mexicana", "Almoço ou Jantar com Rodízio Mexicano delicioso",
-				"Original Burger", 450.00, true, "/assets/ofertas/2/img1.jpg", null, null);
+				"Original Burger", 450.00, true, "/assets/ofertas/2/img1.jpg", "/assets/ofertas/2/img2.jpg", "/assets/ofertas/2/img3.jpg");
 
 		services.save(of2);
 
 		Oferta of3 = new Oferta(null, "restaurante", "Pizzas Grandes", "Pizza Grande, Mussarela, Marguerita ou outras!",
-				"Original Burger", 60.00, true, "/assets/ofertas/3/img2.jpg", null, null);
+				"Original Burger", 60.00, true, "/assets/ofertas/3/img1.jpg", "/assets/ofertas/3/img2.jpg", "/assets/ofertas/3/img3.jpg");
 
 		services.save(of3);
 
 		Oferta of4 = new Oferta(null, "diversao", "Estância das águas", "Diversão garantida com piscinas, trilhas e muito mais.",
-				"Original Burger", 150.00, false, "/assets/ofertas/4/img2.jpg", null, null);
+				"Original Burger", 150.00, false, "/assets/ofertas/4/img2.jpg", "/assets/ofertas/4/img5.jpg", "/assets/ofertas/4/img6.jpg");
 
 		services.save(of4);
 

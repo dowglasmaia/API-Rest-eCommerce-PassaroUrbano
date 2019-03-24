@@ -11,6 +11,7 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface OfertaRepo extends JpaRepository<Oferta, Long> {
 	
+	/* Buscar ofertas por Categorias */
 	 @Query("select u from Oferta u where u.categoria = :categoria")
 	  List<Oferta>findByLastname(@Param("categoria") String categoria);
 	
