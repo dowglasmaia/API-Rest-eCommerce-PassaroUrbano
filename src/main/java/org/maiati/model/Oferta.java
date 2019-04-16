@@ -1,11 +1,15 @@
 package org.maiati.model;
 
 import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.List;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
 
 @Entity
 public class Oferta implements Serializable {
@@ -34,7 +38,7 @@ public class Oferta implements Serializable {
 	private String img3;
 
 	public Oferta() {
-		
+
 	}
 
 	public Oferta(Long id, String categoria, String titulo, String descricaoOferta, String anunciante, Double valor,

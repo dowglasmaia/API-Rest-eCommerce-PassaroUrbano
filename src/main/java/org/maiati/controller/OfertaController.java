@@ -30,6 +30,13 @@ public class OfertaController {
 
 		return ResponseEntity.ok().body(list);
 	}
+	
+	@GetMapping("/descricao")
+	public ResponseEntity<List<Oferta>> findByDescricao(@RequestParam(value = "descricao") String descraio) {
+		List<Oferta> list = service.findDescricao(descraio);
+
+		return ResponseEntity.ok().body(list);
+	}
 
 	@GetMapping("/{id}")
 	public ResponseEntity<Oferta> buscarPorId(@PathVariable Long id) {
